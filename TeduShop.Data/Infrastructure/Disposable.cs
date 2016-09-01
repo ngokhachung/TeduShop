@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeduShop.Data.Infastructure
+namespace TeduShop.Data.Infrastructure
 {
     public class Disposable : IDisposable
     {

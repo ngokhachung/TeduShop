@@ -11,9 +11,11 @@ namespace TeduShop.Model.Models
     [Table("ProductTags")]
     public class ProductTag
     {
+        [Key]
+        [Column(Order = 1)]
         public int? ProductID { set; get; }
 
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar", Order = 2)]
         [StringLength(50)]
         [Required]
         public string TagID { set; get; }

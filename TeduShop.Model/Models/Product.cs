@@ -21,7 +21,9 @@ namespace TeduShop.Model.Models
 
         public int CategoryID { set; get; }
         public string Image { set; get; }
-        public XElement MoreImages { set; get; }
+
+        [Column(TypeName ="varchar")]
+        public string MoreImages { set; get; }
         public decimal Price { set; get; }
         public decimal? Promotion { set; get; }
         public int? Warrantly { set; get; }
